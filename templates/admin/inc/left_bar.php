@@ -51,10 +51,10 @@
             <ul class="nav navbar-nav">
                 <h3 class="menu-title">thống kê</h3>
                 <li class="active menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home"></i>Bảng thống kê</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-dashboard"></i>Bảng thống kê</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li> <i class="menu-icon fa fa-dashboard"></i><a href="/admin/">Admin </a></li>
-                        <li> <i class="menu-icon fa fa-dashboard"></i><a href="/admin/dashboard_stakeholder.php">Công ty đối tác </a></li>
+                        <li> <i class="menu-icon fa fa-bar-chart-o"></i><a href="/admin/">Admin </a></li>
+                        <li> <i class="menu-icon fa fa-line-chart"></i><a href="/admin/dashboard_stakeholder.php">Công ty đối tác </a></li>
                     </ul>
                 </li>
                 <h3 class="menu-title">Quản lý</h3><!-- /.menu-title -->
@@ -66,6 +66,14 @@
                         <li><i class="fa fa-user"></i><a href="/admin/management/user/admin/">Quản lý admin</a></li>
                     </ul>
                 </li>
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-desktop "></i>Quản lý danh mục </a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li> <i class="menu-icon fa fa-desktop"></i><a href="/admin/management/category/website">Quản lý danh mục web</a></li>
+                        <li> <i class="menu-icon fa fa-suitcase"></i><a href="/admin/dashboard_stakeholder.php">Quản lý loại hàng</a></li>
+                        <li> <i class="menu-icon fa fa-train"></i><a href="/admin/dashboard_stakeholder.php">Quản lý loại xe</a></li>
+                    </ul>
+                </li>
                 <li>
                     <a href="/admin/management/contact/"> <i class="menu-icon ti-email"></i>Quản lý liên hệ </a>
                 </li>
@@ -74,9 +82,6 @@
                 </li>
                 <li>
                     <a href="/admin/management/position/"> <i class="menu-icon ti-check-box"></i>Quản lý chức vụ </a>
-                </li>
-                <li>
-                    <a href="/admin/management/category/"> <i class="menu-icon ti-desktop "></i>Quản lý danh mục </a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->

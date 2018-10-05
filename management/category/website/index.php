@@ -21,7 +21,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/admin/templates/admin/inc/left_bar.php'
                 <div class="page-title">
                     <ol class="breadcrumb text-right">
                         <li><a href="#">Quản lý</a></li>
-                        <li class="active">Danh mục</li>
+                        <li class="active">Danh mục website</li>
                     </ol>
                 </div>
             </div>
@@ -37,7 +37,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/admin/templates/admin/inc/left_bar.php'
                             <strong class="card-title">Danh mục</strong>
                         </div>
                         <div class="card-body ">
-                            <button type="button" class="border rounded border-success btn btn-success btn-sm" data-toggle="modal" data-target="#insert"><i class="menu-icon fa fa-plus-circle"></i>Thêm danh mục</button>
+                            <button type="button" class="border rounded border-success btn btn-success btn-sm" data-toggle="modal" data-target="#insert"><i class="menu-icon fa fa-plus-circle"></i> Thêm danh mục </button>
                         </div>
                         <div class="card-body">
                             <table class="table table-striped table-bordered table-hover">
@@ -50,7 +50,16 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/admin/templates/admin/inc/left_bar.php'
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Liên hệ</td>
+                                    <td>
+                                        Liên hệ
+                                        <ul style="list-style: none; margin-left: 30px">
+                                            <li>
+                                                Liên hệ con
+                                                <a href="#" class="fa fa-trash-o"></a>
+                                                <a  class="fa fa-pencil" href data-toggle="modal" data-target="#editCon"></a>
+                                            </li>
+                                        </ul>
+                                    </td>
                                     <td >
                                         <div class="form-group form-inline ">
                                             <select id="place" class="form-control col-2" style="margin-right: 10px">
@@ -63,12 +72,22 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/admin/templates/admin/inc/left_bar.php'
                                         </div>
                                     </td>
                                     <td align="center">
-                                        <button type="button" class="border rounded border-success btn btn-outline-success btn-sm" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i> Sửa</button>
+                                        <button type="button" class="border rounded border-success btn btn-outline-success btn-sm" data-toggle="modal" data-target="#editCha"><i class="fa fa-edit"></i> Sửa</button>
                                         <button type="button" class="border rounded border-danger btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i> Xóa</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Về chúng tôi</td>
+                                    <td>
+                                        Về chúng tôi
+                                        <ul style="list-style: none; margin-left: 30px">
+                                            <li>
+                                                Con
+                                                <a href="#" class="fa fa-trash-o"></a>
+                                                <a  class="fa fa-pencil" href data-toggle="modal" data-target="#editCon"></a>
+                                            </li>
+                                        </ul>
+
+                                    </td>
                                     <td >
                                         <div class="form-group form-inline ">
                                             <select id="place" class="form-control col-2" style="margin-right: 10px">
@@ -81,7 +100,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/admin/templates/admin/inc/left_bar.php'
                                         </div>
                                     </td>
                                     <td align="center">
-                                        <button type="button" class="border rounded border-success btn btn-outline-success btn-sm" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i> Sửa</button>
+                                        <button type="button" class="border rounded border-success btn btn-outline-success btn-sm" data-toggle="modal" data-target="#abc"><i class="fa fa-edit"></i> Sửa</button>
                                         <button type="button" class="border rounded border-danger btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i> Xóa</button>
                                     </td>
                                 </tr>
@@ -102,8 +121,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/admin/templates/admin/inc/left_bar.php'
 <!-- Right Panel -->
 <!--Form thêm sửa-->
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/admin/management/position/insert.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/admin/management/position/edit.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/admin/management/category/website/insert.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/admin/management/category/website/edit.php';
+
 ?>
 <!--Form thêm sửa-->
 <?php
