@@ -69,9 +69,9 @@
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-desktop "></i>Quản lý danh mục </a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li> <i class="menu-icon fa fa-desktop"></i><a href="/admin/management/category/website">Quản lý danh mục web</a></li>
-                        <li> <i class="menu-icon fa fa-suitcase"></i><a href="/admin/dashboard_stakeholder.php">Quản lý loại hàng</a></li>
-                        <li> <i class="menu-icon fa fa-train"></i><a href="/admin/dashboard_stakeholder.php">Quản lý loại xe</a></li>
+                        <li> <i class="menu-icon fa fa-desktop"></i><a href="/admin/management/category/website/">Quản lý danh mục web</a></li>
+                        <li> <i class="menu-icon fa fa-suitcase"></i><a href="/admin/management/category/TypeOfCargo/">Quản lý danh mục hàng</a></li>
+                        <li> <i class="menu-icon fa fa-train"></i><a href="/admin/management/category/TypeOfTruck/">Quản lý danh mục xe</a></li>
                     </ul>
                 </li>
                 <li>
